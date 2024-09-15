@@ -11,8 +11,26 @@ public class MainController {
 
     @GetMapping("/")
     public String greeting(Model model) {
-        model.addAttribute("name", "Hello World");
         return "greeting";
     }
+//    @GetMapping("/books")
+//    public String greeting(Model model) {
+//        model.addAttribute("name", "Hello World");
+//        return "greeting";
+//    }
+//    @GetMapping("/debtors")
+//    public String greeting(Model model) {
+//        model.addAttribute("name", "Hello World");
+//        return "greeting";
+//    }
+    @GetMapping("/support")
+    public String support(Model model) {
+        return "support";
+    }
+//    @GetMapping("/auth")
+//    public String greeting(Model model) {
+//        model.addAttribute("name", "Hello World");
+//        return "greeting";
+//    }
 
 }
