@@ -11,6 +11,7 @@ public class MainController {
 
     @GetMapping("/")
     public String greeting(Model model) {
+        model.addAttribute("title", "Главная страница");
         return "greeting";
     }
 //    @GetMapping("/books")
@@ -25,6 +26,7 @@ public class MainController {
 //    }
     @GetMapping("/support")
     public String support(Model model) {
+        model.addAttribute("title", "Поддержка");
         return "support";
     }
 //    @GetMapping("/auth")

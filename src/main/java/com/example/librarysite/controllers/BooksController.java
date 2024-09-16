@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class BooksController {
     @GetMapping("/books")
     public String books(Model model) {
+        model.addAttribute("title", "Страница книг");
         return "books";
     }
 }

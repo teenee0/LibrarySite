@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DebtorsController {
     @GetMapping("/debtors")
     public String books(Model model) {
+        model.addAttribute("title", "Страница должников");
         return "debtors";
     }
 }

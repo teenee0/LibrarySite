@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class SingInController {
     @GetMapping("/auth")
     public String auth(Model model) {
+        model.addAttribute("title", "Страница входа");
         return "auth";
     }
 }
